@@ -22,14 +22,14 @@ ul {
 input {
   width: 90%;
   padding: 6px 10px;
-  margin: 10px 10px;
+  margin: 10px 20px;
   border: 1px solid #ddd;
   box-sizing: border-box;
   display: flex;
 }
 
 .More button {
-  background: #fff;
+  background: whitesmoke;
   color: #358df1;
   border: 0;
   padding: 3px;
@@ -70,4 +70,12 @@ input {
   border-radius: 8px;
   cursor: pointer;
   font-size: medium;
+}
+
+.grid {
+  margin-bottom: 16px;
+  margin-top: 16px;
+  padding: 8px;
+  background-color: whitesmoke;
+  border-radius: 15px;
 }

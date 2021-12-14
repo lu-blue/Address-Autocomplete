@@ -3,8 +3,6 @@ import AddressForm from "./components/AddressForm";
 import { useState } from "react";
 import "./css/App.css";
 
-
-
 export default function App() {
   const [viewMap, setViewMap] = useState(false);
   const linkName = viewMap
@@ -15,19 +13,22 @@ export default function App() {
 
   return (
     <div className="App">
-      <h2>Please, fill in your address</h2>
-      <AddressForm />
+      <div className="grid">
+        <h2>Please, fill in your address</h2>
 
-      <div className="More">
-        <button
-          className="view-more-button"
-          onClick={() => {
-            setViewMap(!viewMap);
-          }}
-        >
-          {linkName}
-        </button>
-        {viewMap && extraMap}
+        <AddressForm />
+
+        <div className="More">
+          <button
+            className="view-more-button"
+            onClick={() => {
+              setViewMap(!viewMap);
+            }}
+          >
+            {linkName}
+          </button>
+          {viewMap && extraMap}
+        </div>
       </div>
     </div>
   );

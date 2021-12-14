@@ -84,7 +84,7 @@ class MapContainer extends Component {
         <Map
           google={this.props.google}
           style={{
-            width: "30%",
+            width: "62.5%",
             height: "50%",
             padding: "6px 10px",
             margin: "20px 20px",
