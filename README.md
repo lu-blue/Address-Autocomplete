@@ -23,7 +23,7 @@ Since the scope of the project is limited, the app at the moment does not featur
 2. Clone this app repository and pull a copy of it to use locally by writing a command in your terminal
 
 ```
-git clone https://github.com/lu-blue/New-Parcel-Tracer.git
+git clone https://github.com/lu-blue/Address-Autocomplete
 ```
 
 3. Go into the cloned project folder and install the project dependencies by writing the following command:
