@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Address Form and Autocomplete App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A small front-end React app which is a user address form with required fields (Street, Zip code, City, Country) to fill in and submit. The user can also optionally check their address by starting to type it in the designated search bar, which will give autocomplete suggestions from the Google Maps set of APIs, as well as render a map with a marker. The view of the search bar with a map can be opened and closed, to provide a better UX and keep users focused on filling in and submitting the form. In addition, it features a neat design and responsiveness for desktop and mobile.
 
-## Available Scripts
+### Limitations:
 
-In the project directory, you can run:
+Since the scope of the project is limited, the app at the moment does not feature the autofill of the address fields, after the user selects one of the autocomplete suggestions. The recommendation is to include this feature in order to further help users with the address input.
 
-### `npm start`
+## How to run application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Requirements:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.js
 
-### `npm test`
+- GIT
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- IDE, i.e. Visual Studio Code
 
-### `npm run build`
+### Using GIT and IDE
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Open your IDE Terminal and open the directory in which you will store your new application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Clone this app repository and pull a copy of it to use locally by writing a command in your terminal
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone https://github.com/lu-blue/New-Parcel-Tracer.git
+```
 
-### `npm run eject`
+3. Go into the cloned project folder and install the project dependencies by writing the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Each time you want to run the application, use the command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This will start the app in the development mode and open a browser. If you close the browser, you need to navigate to localhost to open it again: [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+5. Go to https://console.cloud.google.com/google/maps-apis/, create a Google Maps JavaScript API key and remember to enable your API in Google Developer Console.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+6. Create .env in a route folder of your project and provide your API key in the following format: REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_KEY_GOES_HERE
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+7. Add .env into your .gitignore file to prevent exposure of your API key
 
-### Code Splitting
+### Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+You can read documentation and customize the app further here:
 
-### Analyzing the Bundle Size
+[Google Maps React](https://www.npmjs.com/package/google-maps-react)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[React Places Autocomplete](https://www.npmjs.com/package/react-places-autocomplete)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Enjoy :)!
