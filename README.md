@@ -50,8 +50,8 @@ This will start the app in the development mode and open a browser. If you close
 
 You can read documentation and customize the app further here:
 
-[Google Maps React](https://www.npmjs.com/package/google-maps-react)
+[Google Maps React (version 2.0.6)](https://www.npmjs.com/package/google-maps-react)
 
-[React Places Autocomplete](https://www.npmjs.com/package/react-places-autocomplete)
+[React Places Autocomplete (version 7.3.0)](https://www.npmjs.com/package/react-places-autocomplete)
 
 ## Enjoy :)!
